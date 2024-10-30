@@ -78,7 +78,6 @@ class MainWindow(QMainWindow):
         vertical_layout = QVBoxLayout()
 
         self.add_button = QAction("Qo'shish", self)
-        self.edit_button = QAction("Tahrirlash", self)
         self.delete_button = QAction("O'chirish", self)
 
         self.add_button.triggered.connect(self.show_add_dialog)
@@ -88,7 +87,6 @@ class MainWindow(QMainWindow):
         self.addToolBar(self.toolbar)
 
         self.toolbar.addAction(self.add_button)
-        self.toolbar.addAction(self.edit_button)
         self.toolbar.addAction(self.delete_button)
 
         self.table = QTableWidget()
